@@ -3,8 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const chalk = require('chalk');
 
-var practitionersRouter = require('./src/routes/practitioners');
-var appointmentsRouter = require('./src/routes/appointments');
+const practitionersRouter = require('./src/routes/practitioners');
+const appointmentsRouter = require('./src/routes/appointments');
 
 const app = express();
 const connected = chalk.bold.green;

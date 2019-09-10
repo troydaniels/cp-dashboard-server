@@ -4,7 +4,7 @@ const router = express.Router();
 // Require controller modules.
 const appointment_controller = require('../controllers/appointmentController');
 
-// GET Appointment list for given Practitioner id, between date range
-router.get('/search', appointment_controller.search);
+// GET Appointment list for given practitioner_id
+router.get('/', appointment_controller.search);
 
 module.exports = router;
