@@ -5,6 +5,6 @@ const router = express.Router();
 const appointment_controller = require('../controllers/appointmentController');
 
 // GET Appointment list for given practitioner_id
-router.get('/', appointment_controller.index);
+router.post('/', appointment_controller.index);
 
 module.exports = router;

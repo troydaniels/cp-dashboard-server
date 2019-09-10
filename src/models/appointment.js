@@ -7,8 +7,8 @@ const appointmentSchema = new mongoose.Schema({
         client_name: String,
         appointment_type: String,
         duration: Number,
-        revenue: mongoose.Types.Decimal128,
-        cost: mongoose.Types.Decimal128,
+        revenue: Number,
+        cost: Number,
         practitioner_id: Number
     },
 );
