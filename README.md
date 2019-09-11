@@ -2,7 +2,13 @@
 
 Node server for Coreplus Practitioner Dashboard project.
 
-To run `npm run dev`
+To run 
+```
+git clone https://github.com/troydaniels/cp-dashboard-server.git
+cd cp-dashboard-server
+npm ci
+npm run dev
+```
 
 Listens on `localhost:8080`
 
