@@ -1,5 +1,4 @@
 const Appointment = require('../models/appointment');
-const moment = require('moment');
 
 // Retrieve Appointment list for a given practitioner_id, between start_date and end_date
 exports.index = async (req, res) => {
@@ -10,7 +9,8 @@ exports.index = async (req, res) => {
     const filteredAppointments = [];
     appointments.forEach(appointment => {
         const { date } = appointment;
-        if(date >= start_date && date <= end_date) {
+
+        if(date >= new Date(start_date) && date <= new Date(end_date)) {
             filteredAppointments.push(appointment);
         }
     });
