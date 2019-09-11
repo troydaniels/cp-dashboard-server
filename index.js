@@ -18,6 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/practitioners', practitionersRouter);
 app.use('/appointments', appointmentsRouter);
 
-app.listen(3000, () => {
-    console.log(connected("Listening on localhost:3000..."));
+app.listen(8080, () => {
+    console.log(connected("Listening on localhost:8080..."));
 });
